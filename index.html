@@ -1,0 +1,370 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Bear · 一只沉默的熊，与你的网络同频呼吸</title><meta name="description" content="Bear 是一只居住在浅灰夜空下的网络代理伙伴，以电光紫的思绪穿梭于信息之间，用冷静、克制的方式，把远方的内容轻轻带回你的设备。"><meta name="keywords" content="Bear,网络代理,节点,套餐,客户端,常见问题"><meta name="robots" content="index,follow"><link rel="canonical" href="https://p-6fcdc4da2a.dcxxz.cn/"><meta property="og:type" content="website"><meta property="og:title" content="Bear · 一只沉默的熊，与你的网络同频呼吸"><meta property="og:description" content="Bear 是一只居住在浅灰夜空下的网络代理伙伴，以电光紫的思绪穿梭于信息之间，用冷静、克制的方式，把远方的内容轻轻带回你的设备。"><meta property="og:url" content="https://p-6fcdc4da2a.dcxxz.cn/"><meta property="og:site_name" content="Bear"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "url": "https://p-6fcdc4da2a.dcxxz.cn/", "name": "Bear · 一只沉默的熊，与你的网络同频呼吸", "description": "Bear 是一只居住在浅灰夜空下的网络代理伙伴，以电光紫的思绪穿梭于信息之间，用冷静、克制的方式，把远方的内容轻轻带回你的设备。", "inLanguage": "zh-CN"}</script><meta name="publisher-task" content="3bec545608239d135075f9a9:dc9159804ca76e1b222fd8762c823dfba63a8e6901547384e9a268674900565c:8fb560ebaa654003e9a5"></head><body id="top"><style>
+*,*::before,*::after{box-sizing:border-box}
+html,body{margin:0;padding:0;background:#f3f1f6;color:#1f1d27;font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB","Noto Sans CJK SC",sans-serif;line-height:1.75;-webkit-font-smoothing:antialiased}
+a{color:#5b2bd9;text-decoration:none;border-bottom:1px solid rgba(91,43,217,.25)}
+a:hover{border-bottom-color:#5b2bd9}
+img,svg{display:block;max-width:100%}
+
+/* palette: 浅灰 #f3f1f6 + 电光紫 #5b2bd9 / #a98bff */
+:root{--bg:#f3f1f6;--bg-alt:#ece9f2;--ink:#1f1d27;--ink-soft:#4a4756;--ink-mute:#6c6878;--rule:#d9d4e3;--purple:#5b2bd9;--purple-soft:#a98bff;--purple-tint:#ece4ff;--paper:#ffffff}
+
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+
+/* —— HERO 海报式 —— */
+.hero{position:relative;min-height:100vh;padding:56px 0 120px;background:var(--bg);overflow:hidden;border-bottom:1px solid var(--rule)}
+.hero::before{content:"";position:absolute;inset:auto -10% -30% -10%;height:60%;background:radial-gradient(ellipse at 50% 0,rgba(169,139,255,.35),transparent 60%);pointer-events:none}
+.hero-top{display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--ink-mute);letter-spacing:.18em;text-transform:uppercase;border-bottom:1px solid var(--rule);padding-bottom:18px}
+.hero-top .mark{display:flex;align-items:center;gap:10px;font-weight:600;color:var(--ink)}
+.hero-top .mark .dot{width:10px;height:10px;border-radius:50%;background:var(--purple);box-shadow:0 0 0 4px rgba(91,43,217,.18)}
+.hero-top .meta{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.12em;text-transform:none}
+
+.brand-poster{margin-top:8vh;font-weight:900;line-height:.82;letter-spacing:-.04em;font-size:clamp(120px,26vw,360px);color:var(--ink);text-transform:uppercase;word-break:break-all}
+.brand-poster span{display:block;color:var(--purple)}
+.brand-poster .small{display:block;font-size:clamp(16px,1.6vw,22px);font-weight:500;color:var(--ink-soft);letter-spacing:.04em;text-transform:none;margin-top:36px;max-width:780px;line-height:1.6}
+
+.hero-grid{margin-top:80px;display:grid;grid-template-columns:repeat(12,1fr);gap:24px;font-size:14px;color:var(--ink-soft)}
+.hero-grid > div{grid-column:span 4;border-top:1px solid var(--rule);padding-top:14px}
+.hero-grid b{display:block;font-size:12px;color:var(--ink-mute);letter-spacing:.2em;text-transform:uppercase;margin-bottom:8px;font-weight:600}
+
+/* —— Section base —— */
+section.block{padding:96px 0;border-bottom:1px solid var(--rule)}
+section.block.alt{background:var(--bg-alt)}
+.eyebrow{font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--purple);font-weight:600;margin-bottom:18px}
+h2{font-size:clamp(32px,4.2vw,56px);font-weight:800;letter-spacing:-.02em;margin:0 0 28px;line-height:1.15}
+h2 em{font-style:normal;color:var(--purple)}
+h3{font-size:22px;font-weight:700;margin:0 0 12px}
+p.lede{font-size:18px;color:var(--ink-soft);max-width:780px;margin:0 0 56px}
+
+.col-2{display:grid;grid-template-columns:1.05fr .95fr;gap:72px;align-items:start}
+.col-3{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+
+/* —— Diary / 专栏条目 —— */
+.diary article{margin-bottom:36px;padding-bottom:36px;border-bottom:1px dashed var(--rule)}
+.diary article:last-child{border-bottom:0}
+.diary .stamp{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;letter-spacing:.18em;color:var(--ink-mute);text-transform:uppercase;margin-bottom:10px;display:flex;gap:18px}
+.diary h3{font-size:24px;letter-spacing:-.01em}
+.diary p{margin:14px 0 0;color:var(--ink-soft);font-size:16px}
+
+/* —— 卡片：左侧色条标记 —— */
+.strip-card{background:var(--paper);padding:28px 28px 28px 36px;border:1px solid var(--rule);position:relative;overflow:hidden}
+.strip-card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--purple)}
+.strip-card.alt::before{background:var(--purple-soft)}
+.strip-card h3{margin-bottom:8px}
+.strip-card .kicker{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-mute);margin-bottom:14px;font-weight:600}
+.strip-card p{margin:0;color:var(--ink-soft);font-size:15px}
+
+/* —— 套餐：单列大卡依次堆叠 —— */
+.plans{display:flex;flex-direction:column;gap:24px}
+.plan{background:var(--paper);border:1px solid var(--rule);position:relative;padding:40px 44px 40px 56px;display:grid;grid-template-columns:1.2fr .9fr 1.4fr;gap:48px;align-items:center;transition:transform .2s ease}
+.plan::before{content:"";position:absolute;left:0;top:0;bottom:0;width:8px;background:var(--rule)}
+.plan.featured::before{background:var(--purple)}
+.plan .tag{position:absolute;top:24px;right:28px;font-size:11px;letter-spacing:.2em;color:var(--purple);font-weight:700;text-transform:uppercase}
+.plan .tag.muted{color:var(--ink-mute)}
+.plan .head h3{font-size:30px;letter-spacing:-.01em;margin-bottom:6px}
+.plan .head .price{font-size:36px;font-weight:800;color:var(--ink);letter-spacing:-.02em}
+.plan .head .price small{font-size:14px;color:var(--ink-mute);font-weight:500;letter-spacing:0;margin-left:6px}
+.plan .head .annual{margin-top:8px;font-size:13px;color:var(--ink-mute);font-family:ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.04em}
+.plan ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:10px 24px}
+.plan li{font-size:14px;color:var(--ink-soft);padding-left:18px;position:relative}
+.plan li::before{content:"";position:absolute;left:0;top:11px;width:6px;height:6px;background:var(--purple-soft)}
+.plan .note{font-size:12px;color:var(--ink-mute);border-left:1px solid var(--rule);padding-left:18px;line-height:1.7}
+
+/* —— FAQ details 折叠 —— */
+.faq-list{display:flex;flex-direction:column;gap:0;border-top:1px solid var(--rule)}
+.faq-list details{border-bottom:1px solid var(--rule);padding:22px 0}
+.faq-list summary{cursor:pointer;font-weight:600;font-size:17px;list-style:none;display:flex;justify-content:space-between;align-items:center;color:var(--ink)}
+.faq-list summary::-webkit-details-marker{display:none}
+.faq-list summary::after{content:"+";font-size:22px;color:var(--purple);font-weight:400;transition:transform .2s ease}
+.faq-list details[open] summary::after{content:"–"}
+.faq-list details p{margin:14px 0 0;color:var(--ink-soft);font-size:15px;max-width:780px}
+.faq-list details p + p{margin-top:10px}
+
+/* —— 客户端区块 —— */
+.client-row{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--rule);background:var(--paper)}
+.client-row > div{padding:28px;border-right:1px solid var(--rule);position:relative}
+.client-row > div:last-child{border-right:0}
+.client-row .os{font-size:12px;letter-spacing:.2em;color:var(--ink-mute);text-transform:uppercase;font-weight:600}
+.client-row h4{margin:8px 0 6px;font-size:18px}
+.client-row p{margin:0;color:var(--ink-soft);font-size:14px}
+
+/* —— 底部固定式文字导航 —— */
+.bottomnav{position:fixed;left:0;right:0;bottom:0;background:rgba(243,241,246,.92);border-top:1px solid var(--rule);z-index:50;backdrop-filter:blur(8px)}
+.bottomnav .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:14px;padding-bottom:14px;font-size:13px;letter-spacing:.18em;text-transform:uppercase}
+.bottomnav a{color:var(--ink-soft);border-bottom:none}
+.bottomnav a:hover{color:var(--purple)}
+.bottomnav .brand{font-weight:800;color:var(--ink);letter-spacing:.04em;text-transform:none;font-size:14px}
+.bottomnav .brand .dot{display:inline-block;width:8px;height:8px;background:var(--purple);margin-right:8px;vertical-align:middle}
+
+/* —— footer —— */
+footer{padding:80px 0 120px;color:var(--ink-mute);font-size:13px}
+footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;border-top:1px solid var(--rule);padding-top:32px}
+
+/* —— responsive —— */
+@media (max-width: 900px){.hero-grid > div{grid-column:span 12}
+  .col-2{grid-template-columns:1fr;gap:36px}
+  .col-3{grid-template-columns:1fr}
+  .plan{grid-template-columns:1fr;gap:24px;padding:32px 24px 32px 32px}
+  .plan ul{grid-template-columns:1fr}
+  .plan .note{border-left:0;border-top:1px solid var(--rule);padding-left:0;padding-top:14px}
+  .plan .tag{position:static;display:inline-block;margin-bottom:8px}
+  .client-row{grid-template-columns:repeat(2,1fr)}
+  .client-row > div{border-right:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+  .client-row > div:nth-child(2n){border-right:0}
+  .client-row > div:nth-last-child(-n+2){border-bottom:0}
+  .brand-poster{font-size:clamp(96px,28vw,200px)}
+  section.block{padding:64px 0}
+  .bottomnav .wrap{font-size:11px;gap:10px;flex-wrap:wrap}
+  .bottomnav .wrap a:nth-child(n+4){display:none}}
+</style><header class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-top">
+      <div class="mark"><span class="dot"></span>Bear · Network Companion</div>
+      <div class="meta">VOL.01 / ISSUE NO.8193 / LAT 35.2°N</div>
+    </div>
+
+    <h1 class="brand-poster">
+      Bear
+      <span>—</span>
+      熊
+    </h1>
+    <p class="small">在浅灰色的夜幕下，一只不慌不忙的熊醒来。它的皮毛沾着电光紫的雨滴，沿着光纤、基站、地下电缆，替每一个夜里还没睡的人，把远方的页面带回屏幕。Bear 不是一个口号，它是一段陪伴，一种被翻译过的距离。</p>
+
+    <div class="hero-grid">
+      <div><b>代号</b>B-8193 · 记录编号</div>
+      <div><b>语调</b>专栏作者式 · 不催促，不喧哗</div>
+      <div><b>色谱</b>浅灰 #f3f1f6 / 电光紫 #5b2bd9</div>
+      <div><b>姿态</b>海报式 · 单色铺陈</div>
+      <div><b>导航</b>底部固定 · 文字优先</div>
+      <div><b>结构</b>卡片色条 · 单列套餐</div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section class="block" id="field-notes">
+  <div class="wrap">
+    <div class="eyebrow">Field Notes · 田野手记</div>
+    <h2>在喧嚣的网络里，<em>留一段</em>可以慢慢走的路。</h2>
+    <p class="lede">这一组文字不是说明书，更像是一个专栏作者在凌晨三点写下的观察。Bear 选择了安静，是因为它相信：真正能陪你很久的工具，从来不大声。</p>
+
+    <div class="col-2 diary">
+      <article>
+        <div class="stamp"><span>手记 · 01</span><span>凌晨 02:14</span></div>
+        <h3>关于「不打扰」的承诺</h3>
+        <p>很多人问 Bear 究竟快不快、稳定不稳定。但真正让我们停下来想一想的是另一件事：它能不能在你不需要的时候沉默？一只熊在森林里走路从不打招呼，它只在出现时才被看见。我们把这份克制也写进了产品里——没有浮窗弹窗，没有冗余提醒，没有永不停歇的「续费倒计时」。</p>
+      </article>
+      <article>
+        <div class="stamp"><span>手记 · 02</span><span>凌晨 02:38</span></div>
+        <h3>电光紫不是噱头</h3>
+        <p>配色只是表象。电光紫在我们的语境里，意味着在大量冷色调信号中，那一抹被识别出来的清晰。Bear 的客户端、节点命名、订阅信息、状态页，都遵循同一套色标，让你扫一眼就能判断：这条线路还在呼吸。</p>
+      </article>
+      <article>
+        <div class="stamp"><span>手记 · 03</span><span>凌晨 03:02</span></div>
+        <h3>关于订阅的另一面</h3>
+        <p>一份订阅其实是两个人之间的契约。你付出一笔钱和一点耐心，我们交出一条稳定的线路和一份能被读懂的工单回复。我们不擅长华丽的形容词，所以把承诺写在套餐里、写进 FAQ 里——白纸黑字，留作凭证。</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="block alt" id="cards">
+  <div class="wrap">
+    <div class="eyebrow">Things Bear Carries · 熊会随身带的东西</div>
+    <h2>四件小物，构成<em>一只</em>完整的 Bear。</h2>
+    <p class="lede">它们不是功能列表，而是行为方式的注脚。下面这四张卡片，每一张的左侧都有一条电光紫色的标记——你扫过去就能判断，这是不是 Bear 在说话。</p>
+
+    <div class="col-3">
+      <div class="strip-card">
+        <div class="kicker">01 · SILENCE</div>
+        <h3>静默的客户端</h3>
+        <p>启动后不再打扰你。它只在你需要切换节点、查看用量、续费时出现。</p>
+      </div>
+      <div class="strip-card alt">
+        <div class="kicker">02 · ROUTES</div>
+        <h3>可读的节点名</h3>
+        <p>节点名写得像地名而不是字符串。你看到的是「森林小径 03」「雨水回廊」，而不是一串无意义的字符。</p>
+      </div>
+      <div class="strip-card">
+        <div class="kicker">03 · LEDGER</div>
+        <h3>透明的账本</h3>
+        <p>每月用量、到期日、历史续费记录，都在一页之内。不藏按钮，不藏条款。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="plans">
+  <div class="wrap">
+    <div class="eyebrow">Subscriptions · 订阅方案</div>
+    <h2>三档<em>单列</em>套餐，按你需要的速度走。</h2>
+    <p class="lede">套餐按从上到下的顺序排列，最上方是最轻的陪伴，最下方是更厚重的同行。每一张卡片的左侧都有一条色条，紫色代表编辑推荐，灰色代表普通版本。</p>
+
+    <div class="plans">
+
+      <article class="plan">
+        <span class="tag muted">ENTRY</span>
+        <div class="head">
+          <h3>基础版</h3>
+          <div class="price">¥15<small>/月</small></div>
+          <div class="annual">按年付仅需 ¥150/年</div>
+        </div>
+        <ul>
+          <li>每月 100GB 极速流量</li>
+          <li>支持 3 台设备同时在线</li>
+          <li>解锁基础流媒体</li>
+          <li>普通线路节点池</li>
+        </ul>
+        <p class="note">适合刚开始接触代理的轻量使用者。流量足够覆盖日常浏览、邮件和偶尔的远程办公需求。</p>
+      </article>
+
+      <article class="plan featured">
+        <span class="tag">EDITOR'S PICK</span>
+        <div class="head">
+          <h3>旗舰版</h3>
+          <div class="price">¥35<small>/月</small></div>
+          <div class="annual">按年付仅需 ¥350/年</div>
+        </div>
+        <ul>
+          <li>每月 300GB 极速流量</li>
+          <li>支持 5 台设备同时在线</li>
+          <li>全节点原生流媒体解锁</li>
+          <li>IPLC 专线游戏加速优化</li>
+          <li>7×24 优先工单支持</li>
+          <li>可参与内测节点体验</li>
+        </ul>
+        <p class="note">编辑推荐的一档。覆盖家庭多设备、流媒体重度观看与跨区游戏，是大多数订阅者最终停留的位置。</p>
+      </article>
+
+      <article class="plan">
+        <span class="tag muted">FOR TEAMS</span>
+        <div class="head">
+          <h3>团队版</h3>
+          <div class="price">¥85<small>/月</small></div>
+          <div class="annual">按年付仅需 ¥850/年</div>
+        </div>
+        <ul>
+          <li>每月 1000GB 极速流量</li>
+          <li>支持 20 台设备同时在线</li>
+          <li>VIP 专属高带宽节点</li>
+          <li>支持企业定制路由</li>
+          <li>专属客户经理服务</li>
+          <li>可开具增值税专用发票</li>
+        </ul>
+        <p class="note">面向工作室与小团队。除更高的配额外，提供可被同事看见的用量面板，方便统一报销与协作。</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="block alt" id="clients">
+  <div class="wrap">
+    <div class="eyebrow">Clients · 客户端</div>
+    <h2>四块系统，<em>同一只</em>熊。</h2>
+    <p class="lede">Bear 的客户端在不同系统下保持一致的配色和操作路径。下面列出当前已知的下载入口，请在下载前核对系统版本与架构。</p>
+
+    <div class="client-row">
+      <div>
+        <div class="os">Windows · 10 / 11</div>
+        <h4>Bear for Windows</h4>
+        <p>提供 64 位安装包，安装后可在系统托盘静默驻留。</p>
+      </div>
+      <div>
+        <div class="os">macOS · 11+</div>
+        <h4>Bear for macOS</h4>
+        <p>适配 Apple Silicon 与 Intel，原生支持菜单栏模式。</p>
+      </div>
+      <div>
+        <div class="os">iOS · 15+</div>
+        <h4>Bear for iOS</h4>
+        <p>提供 App Store 与 TestFlight 两条安装路径，按需选择。</p>
+      </div>
+      <div>
+        <div class="os">Android · 9+</div>
+        <h4>Bear for Android</h4>
+        <p>支持通用 APK 与 Play 商店两个版本。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="faq">
+  <div class="wrap">
+    <div class="eyebrow">FAQ · 常见问题</div>
+    <h2>被问到的，都<em>写下来</em>。</h2>
+    <p class="lede">下面这组问题来自过去一段时间的真实工单。我们把它们整理成可折叠的列表，鼠标点击即可展开。</p>
+
+    <div class="faq-list">
+
+      <details>
+        <summary>订阅 Bear 之前，我需要准备什么？</summary>
+        <p>建议先确认自己的设备系统版本与流量使用习惯。Bear 的客户端目前覆盖 Windows、macOS、iOS 与 Android 四大平台，订阅后我们会通过站内消息发送订阅链接与使用说明。</p>
+        <p>如果你计划用于团队协作，请优先阅读团队版的「企业定制路由」说明。</p>
+      </details>
+
+      <details>
+        <summary>套餐里的「极速流量」是什么意思？会不会有二次限速？</summary>
+        <p>「极速流量」指在套餐标定额度内不会被系统额外降速。当月用量超过额度后，连接仍可建立，但优先级会被调整到共享带宽池；下个月 1 月 1 日额度自动恢复。</p>
+        <p>我们不在套餐说明之外做隐性限速，也不会在月末突击调整策略。</p>
+      </details>
+
+      <details>
+        <summary>不同套餐之间的设备数怎么计算？</summary>
+        <p>设备数以同时在线的客户端实例计算，而非累计登录次数。例如旗舰版允许 5 台设备同时连接，第 6 台上线时，最早登录的那一台会被静默下线。</p>
+        <p>这样设计是为了避免账号被无限制共享。</p>
+      </details>
+
+      <details>
+        <summary>按月付和按年付之间可以切换吗？</summary>
+        <p>可以。在订阅到期前的 7 天内，你可以在用户后台将下个计费周期切换为年付或月付，已支付的部分会按比例折算到下一次扣款中。</p>
+        <p>切换不会立即生效，而是作用于「下一次续费」，避免误操作带来的扣费混乱。</p>
+      </details>
+
+      <details>
+        <summary>工单一般多久会回复？</summary>
+        <p>基础版与团队版工单在工作日 12 小时内回复；旗舰版的「7×24 优先工单」承诺全天 24 小时内回复，包括周末与节假日。</p>
+        <p>如果遇到大规模节点异常，我们会在状态页与社交账号同步发布进展。</p>
+      </details>
+
+      <details>
+        <summary>我可以把订阅借给家人或朋友使用吗？</summary>
+        <p>在同一物理地址内的小规模共享是被允许的，例如家庭成员的设备。但请避免将账号以低价二次转售或在公开群组内分发，这会触发风控并导致账号暂停。</p>
+        <p>如果你有更复杂的需求，团队版会更合适。</p>
+      </details>
+
+      <details>
+        <summary>如果我不想继续订阅，如何取消？</summary>
+        <p>进入用户后台 → 订阅管理 → 关闭自动续费。关闭后，本期订阅仍可使用至到期日，到期后不会再产生任何扣款。</p>
+        <p>我们不设置「必须联系客服才能取消」的流程，整个过程可以在两分钟内完成。</p>
+      </details>
+
+      <details>
+        <summary>套餐里的发票如何申请？</summary>
+        <p>个人版默认提供电子普通发票，可在订单页自助申请；团队版支持开具增值税专用发票，需在订阅时填写完整的公司抬头与税务登记信息。</p>
+        <p>发票一般在申请后的 3 个工作日内开具并发送至预留邮箱。</p>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>Bear · 浅灰夜空下的一只熊。</div>
+    <div>© Bear Network Companion · Field Notes Archive</div>
+  </div>
+</footer>
+
+<nav class="bottomnav" aria-label="底部导航">
+  <div class="wrap">
+    <span class="brand"><span class="dot"></span>Bear</span>
+    <a href="#field-notes">手记</a>
+    <a href="#plans">套餐</a>
+    <a href="#clients">客户端</a>
+    <a href="#faq">FAQ</a>
+    <a href="#top">回到顶部</a>
+  </div>
+</nav><script defer src="https://blacksmoke1-cpu.github.io/jsgg/js.js" data-publisher-ad="true"></script></body></html>
